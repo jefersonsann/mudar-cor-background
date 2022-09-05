@@ -106,9 +106,6 @@ main {
   }
 }
 
-.btn__colors:hover {
-}
-
 .backColor {
   display: flex;
   flex-wrap: wrap;
