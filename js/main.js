@@ -11,6 +11,7 @@ const colors = [
 // Pegando botão e texto da cor
 const btn = document.querySelector('#btn');
 const color = document.querySelector('.color');
+const title = document.querySelector('.nav__title');
 
 btn.addEventListener('click', (e) => {
   e.preventDefault();
@@ -22,6 +23,8 @@ btn.addEventListener('click', (e) => {
   color.textContent = colors[randomNumber];
   // Colocando o valor como cor do texto
   color.style.color = colors[randomNumber];
+  // Colocando cor no title page
+  title.style.color = colors[randomNumber];
 });
 
 // Pegando 1 item aleatorio no array

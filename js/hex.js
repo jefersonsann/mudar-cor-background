@@ -3,6 +3,7 @@ const hex = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 'A', 'B', 'C', 'D', 'E', 'F'];
 // Pegando botão e texto da cor
 const btn = document.getElementById('btn');
 const color = document.querySelector('.color');
+const title = document.querySelector('.nav__title');
 
 // Logica ao click botão
 btn.addEventListener('click', (e) => {
@@ -19,6 +20,8 @@ btn.addEventListener('click', (e) => {
   color.style.color = hexColor;
   // Colocando o valor retornado no Bg body
   document.body.style.backgroundColor = hexColor;
+  // Colocando cor no title page
+  title.style.color = hexColor;
 });
 
 // Pegando os 6 irems no array randomicamente

@@ -1,5 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;500;900&display=swap');
 
+:root {
+  --primary: #111;
+  --secundary: #ddd;
+}
 * {
   margin: 0;
   padding: 0;
@@ -11,14 +15,15 @@ a {
 }
 
 body {
-  color: #ddd;
+  color: var(--secundary);
   font-family: 'Roboto', sans-serif;
+  background-color: #161616;
 }
 
 header {
-  color: #111;
+  color: var(--secundary);
   box-shadow: 0 5px 5px rgba(0, 0, 0, 0.3);
-  background-color: #fff;
+  background-color: var(--primary);
 }
 
 .nav {
@@ -43,7 +48,7 @@ header {
 }
 
 .nav__links a {
-  color: #111;
+  color: var(--secundary);
   text-transform: uppercase;
 }
 
@@ -52,7 +57,7 @@ header {
   display: block;
   width: 0;
   height: 2px;
-  background-color: #111;
+  background-color: var(--secundary);
   transition: all 0.3s ease-in-out;
 }
 
@@ -75,16 +80,16 @@ main {
 }
 
 .btn__colors {
-  color: #111;
-  border: 2px solid #111;
-  border-radius: 0.5rem;
-  background-color: transparent;
-  outline: none;
-  padding: 1rem 2rem;
   font-size: 1.2rem;
   font-weight: 700;
-  margin-top: 3rem;
   text-transform: uppercase;
+  color: var(--primary);
+  margin-top: 3rem;
+  padding: 1rem 2rem;
+  border-radius: 0.5rem;
+  border: 2px solid var(--secundary);
+  background-color: var(--secundary);
+  outline: none;
   cursor: pointer;
 }
 
@@ -102,16 +107,19 @@ main {
 }
 
 .btn__colors:hover {
-  color: #fff;
-  background-color: #111;
 }
 
 .backColor {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
   font-size: 3rem;
-  color: white;
+  color: var(--primary);
   padding: 1rem 3rem;
   border-radius: 0.5rem;
-  background-color: #111;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
+  background-color: var(--secundary);
 }
 
 .backColor span {
@@ -123,6 +131,7 @@ main {
     font-size: 1.5rem;
   }
   .backColor {
+    margin: 0 1rem;
     font-size: 1.5rem;
     padding: 1rem 2rem;
   }
