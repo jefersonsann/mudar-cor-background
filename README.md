@@ -1,6 +1,6 @@
 # #Mudar cor Background
 
-<img width="100%" src="https://raw.githubusercontent.com/jefersonsann/mudar-cor-background/main/img/contadorSimples.png" alt="Imagem Projeto versão mobile" />
+<img width="100%" src="https://raw.githubusercontent.com/jefersonsann/mudar-cor-background/main/img/mudarCor.png" alt="Imagem Projeto versão mobile" />
 
 # [DEMO](https://jefersonsann.github.io/mudar-cor-background/)
 
